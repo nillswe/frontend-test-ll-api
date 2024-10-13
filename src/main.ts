@@ -1,16 +1,19 @@
 import { Request, Response } from "express";
+import express from "express"
+import dotenv from "dotenv"
+import { products } from "./data.mock";
 
-// src/index.js
-const express = require('express');
-const dotenv = require('dotenv');
 
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT;
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Express + TypeScript Server');
+app.use(express.static('public'))
+
+
+app.get('/products', (req: Request, res: Response) => {
+  res.json(products).status(200)
 });
 
 app.listen(port, () => {
