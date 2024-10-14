@@ -21,15 +21,17 @@ APP_URL='http://localhost'
 PORT=3001
 ```
 
+
+Para instalar as dependências, execute o comando:
+
+```bash
+yarn install
+```
+
+
 Para rodar o servidor de dev, execute o comando:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
