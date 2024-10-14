@@ -13,7 +13,14 @@ app.use(express.static('public'))
 
 
 app.get('/products', (req: Request, res: Response) => {
-  res.json(products).status(200)
+  res.status(200).json(products)
+});
+
+app.get('/products/:slug', (req: Request, res: Response) => {
+  const slug = req.params.slug
+  const product = products.find(product => product.slug === slug) ?? null
+
+  res.status(200).json(product)
 });
 
 app.listen(port, () => {
