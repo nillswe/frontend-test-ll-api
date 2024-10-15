@@ -10,7 +10,12 @@ function dbCallback(err: Error | null) {
 
 db.serialize(() => {
   db.run(createTable)
-  db.run(initialData)
+
+  db.all('select * from products', [], (err, rows) => {
+    if (rows.length === 0) {
+      db.run(initialData)
+    }
+  })
 })
 
 export {db}

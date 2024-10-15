@@ -16,9 +16,10 @@ export const createTable = `
   `
 
 export const initialData = `
-  INSERT INTO products (
+ INSERT INTO products (
     code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+) VALUES
+(
     'D22-2077-006',
     'Tênis Nike Revolution 7 Feminino - Preto+Branco',
     1, 1, 
@@ -28,10 +29,8 @@ export const initialData = `
     4.5,
     'https://static.netshoes.com.br/produtos/tenis-nike-revolution-7-feminino/26/JD8-6363-026/JD8-6363-026_zoom1.jpg?ts=1708096757?ims=544x',
     1
-);
-INSERT INTO products (
-    code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+),
+(
     'NQQ-4378-028',
     'Bola de Futebol Society Penalty 8 X - Branco+Verde Limão',
     1, 1, 
@@ -41,11 +40,8 @@ INSERT INTO products (
     4,
     'https://static.netshoes.com.br/produtos/bola-de-futebol-society-penalty-8-x/78/D23-5694-078/D23-5694-078_zoom1.jpg?ts=1695700132?ims=544x',
     1
-);
-
-INSERT INTO products (
-    code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+),
+(
     '3R2-0087-240-02',
     'Kit 4 Camiseta Masculina Segunda Pele Proteção Solar UV Térmica Praia Manga Longa Blusa Camisa - Cinza+Azul',
     0, 1, 
@@ -55,11 +51,8 @@ INSERT INTO products (
     3.5,
     'https://static.netshoes.com.br/produtos/kit-4-camiseta-masculina-segunda-pele-protecao-solar-uv-termica-praia-manga-longa-blusa-camisa/40/3R2-0087-240/3R2-0087-240_zoom1.jpg?ts=1690411979?ims=544x',
     0
-);
-
-INSERT INTO products (
-    code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+),
+(
     '140-1040-008-01',
     'Mesa de Ping Pong / Tênis de Mesa Klopf - 12 mm - Azul',
     1, 1, 
@@ -69,11 +62,8 @@ INSERT INTO products (
     3,
     'https://static.netshoes.com.br/produtos/mesa-de-ping-pong-tenis-de-mesa-klopf-12-mm/08/140-1040-008/140-1040-008_zoom1.jpg?ts=1712923154?ims=544x',
     1
-);
-
-INSERT INTO products (
-    code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+),
+(
     'FB9-4074-070',
     'Chuteira Society Adidas Deportivo II Unissex - Exclusiva - Preto',
     1, 1, 
@@ -83,11 +73,8 @@ INSERT INTO products (
     4.5,
     'https://static.netshoes.com.br/produtos/chuteira-society-adidas-deportivo-ii-unissex-exclusiva/70/FB9-4074-070/FB9-4074-070_zoom1.jpg?ts=1710336224?ims=544x',
     1
-);
-
-INSERT INTO products (
-    code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+),
+(
     'BKB-0035-014-60',
     'Kit 3x Colágeno Tipo 2 + Vitaminas Joelho E Articulação 60 Capsulas Sabor Sem Sabor - Branco',
     1, 1, 
@@ -97,11 +84,8 @@ INSERT INTO products (
     3,
     'https://static.netshoes.com.br/produtos/kit-3x-colageno-tipo-2-vitaminas-joelho-e-articulacao-60-capsulas-sabor-sem-sabor/14/BKB-0035-014/BKB-0035-014_zoom1.jpg?ts=1713881543?ims=544x',
     1
-);
-
-INSERT INTO products (
-    code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+),
+(
     'FDT-6437-004-38',
     'Sandália crocs classic mega crush clog bone - Bege',
     1, 1, 
@@ -111,11 +95,8 @@ INSERT INTO products (
     4,
     'https://static.netshoes.com.br/produtos/sandalia-crocs-classic-mega-crush-clog-bone/04/FDT-6437-004/FDT-6437-004_zoom1.jpg?ts=1716301112?ims=544x',
     1
-);
-
-INSERT INTO products (
-    code, name, available, visible, details_name, details_description, price_in_cents, sale_price_in_cents, rating, image, stock_available
-) VALUES (
+),
+(
     'F83-5256-006-01',
     'Boné New Era 9Forty New York Aba Curva Preto - Preto',
     1, 1, 
@@ -126,6 +107,4 @@ INSERT INTO products (
     'https://static.netshoes.com.br/produtos/bone-new-era-9forty-new-york-aba-curva-preto/06/F83-5256-006/F83-5256-006_zoom1.jpg?ts=1694533028?ims=544x',
     1
 );
-  
-  
   `
