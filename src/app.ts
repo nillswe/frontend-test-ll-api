@@ -2,7 +2,6 @@ import 'module-alias/register'
 import express from 'express'
 import dotenv from 'dotenv'
 import {router} from '@/routes'
-import {authorizationMiddleware} from '@/routes/middleware'
 
 dotenv.config()
 
@@ -11,7 +10,6 @@ const port = process.env.PORT
 const authToken = 'fake-token-do-not-delete'
 
 app.use(express.static('public'))
-app.use(authorizationMiddleware)
 
 app.use('/', router)
 

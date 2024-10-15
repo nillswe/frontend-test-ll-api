@@ -1,7 +1,10 @@
+import {authorizationMiddleware} from '@/routes/middleware'
 import {db} from '@/services/database/sqlite.config'
 import {Request, Response, Router} from 'express'
 
 const router = Router()
+
+router.use(authorizationMiddleware)
 
 router.get('/products', (req: Request, res: Response) => {
   db.all('SELECT * FROM products', [], (err, rows) => {
